@@ -9,7 +9,6 @@ import os
 import sys
 import time
 from datetime import datetime
-from xmlrpc.client import boolean
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -78,7 +77,7 @@ def return_soup(url:str, sleep_time:int):
         print("return_soup error: ", error)
         return None    
 
-def download_txt(url: str)-> boolean:
+def download_txt(url: str)-> bool:
     """Function to click on hyperlink to download txt
 
         Args:
